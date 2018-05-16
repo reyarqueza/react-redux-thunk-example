@@ -1,0 +1,39 @@
+{
+  "name": "react-redux-thunk-example",
+  "version": "1.0.0",
+  "description": "Minimum build system for React, Webpack and Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx webpack --watch --config webpack.config.dev.js --mode development & node ./start-server.js",
+    "build": "npx webpack --watch --config webpack.config.prod.js --mode production & node ./start-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reyarqueza/react-webpack-build.git"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "build"
+  ],
+  "author": "Rey Arqueza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reyarqueza/react-webpack-build/issues"
+  },
+  "homepage": "https://github.com/reyarqueza/react-webpack-build#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.8.1",
+    "webpack-cli": "^2.1.3"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
