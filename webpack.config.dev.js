@@ -1,6 +1,6 @@
 const config = {
     entry: './src/index.js',
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
     output: {
       filename: './js/bundle.js',
       path: __dirname + '/public'
@@ -12,11 +12,11 @@ const config = {
                 loader: 'babel-loader',
                 exclude: /node_modules/,
                 query: {
-                    presets: ['react', 'stage-3']
+                    presets: ['@babel/env', '@babel/react']
                 }
             }
         ]
     }
   };
-  
+
   module.exports = config;
