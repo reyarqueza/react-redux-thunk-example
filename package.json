@@ -24,19 +24,19 @@
   },
   "homepage": "https://github.com/reyarqueza/react-webpack-build#readme",
   "devDependencies": {
-    "@babel/core": "^7.11.1",
-    "@babel/node": "^7.10.5",
-    "@babel/preset-env": "^7.11.0",
-    "@babel/preset-react": "^7.10.4",
-    "babel-loader": "^8.1.0",
+    "@babel/core": "^7.13.14",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
     "lodash.isempty": "^4.4.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-redux": "^7.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.3",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "webpack": "^4.8.1",
-    "webpack-cli": "^3.3.12"
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0"
   },
   "dependencies": {
     "express": "^4.17.1"

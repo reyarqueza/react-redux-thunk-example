@@ -13,7 +13,7 @@ const config = {
                 test: /.jsx?$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/,
-                query: {
+                options: {
                     presets: ['@babel/env', '@babel/react']
                 }
             }
