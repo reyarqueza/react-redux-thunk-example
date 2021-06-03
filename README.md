@@ -25,13 +25,19 @@ npm install
 ```
 
 ### Development
-Start the local server:
+1. Start the local server:
 
 ```
 npm start
 ```
 
-Open the browser at the url specified in the terminal. Add/edit React files in the src folder. After saving, your files are built automaticallty. The file /public/js/bundle.js will be created in development mode (including source maps). Refresh the browser window.
+2. Open the browser at the url specified in the terminal.
+
+3. Open another terminal and run the following to start developing:
+```
+npm run dev
+```
+Add/edit React files in the src folder. After saving, your files are built automaticallty. The file /public/js/bundle.js will be created in development mode (including source maps). Refresh the browser window.
 
 ### Production
 Build the app:
@@ -40,4 +46,4 @@ Build the app:
 npm run build
 ```
 
-The file /public/js/bundle.js will be overwritten and minfied in production mode (with  source maps as a separate file).
+The file /public/js/bundle.js will be overwritten and minfied in production mode (with  source maps as a separate file). There will be no watch mode, and the build process will exit after completion.
