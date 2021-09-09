@@ -3,8 +3,8 @@ import { isLoading } from './interactions';
 import { combineReducers }  from 'redux';
 
 const reducer = combineReducers({
-    list,
-    isLoading
+  list,
+  isLoading
 });
 
 export default reducer;
