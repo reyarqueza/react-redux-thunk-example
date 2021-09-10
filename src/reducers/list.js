@@ -1,4 +1,4 @@
-import { HELLO_RESPONSE } from '../actions';
+import {HELLO_RESPONSE} from '../actions';
 
 export default function list(state = {}, action) {
   switch (action.type) {

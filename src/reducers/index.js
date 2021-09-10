@@ -1,10 +1,10 @@
 import list from './list';
-import { isLoading } from './interactions';
-import { combineReducers }  from 'redux';
+import {isLoading} from './interactions';
+import {combineReducers} from 'redux';
 
 const reducer = combineReducers({
   list,
-  isLoading
+  isLoading,
 });
 
 export default reducer;

@@ -1,16 +1,13 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
 import List from '../presentational/List.jsx';
-import { fetchHello } from '../../actions';
+import {fetchHello} from '../../actions';
 import isEmpty from 'lodash.isempty';
 
 class Example extends Component {
-  render () {
-
+  render() {
     if (this.props.isLoading) {
-      return (
-        <p>Loading...</p>
-      )
+      return <p>Loading...</p>;
     }
 
     if (!isEmpty(this.props.list)) {
@@ -19,11 +16,10 @@ class Example extends Component {
           <h2>The list below is being pulled via the usual http external api.</h2>
           <List list={this.props.list} />
         </div>
-      )
+      );
     } else {
       return null;
     }
-
   }
 
   componentDidMount() {
@@ -31,19 +27,19 @@ class Example extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
     list: state.list,
-    isLoading: state.isLoading
-  }
-}
+    isLoading: state.isLoading,
+  };
+};
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
   return {
     getHello: () => {
-      dispatch(fetchHello())
-    }
-  }
-}
+      dispatch(fetchHello());
+    },
+  };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Example);

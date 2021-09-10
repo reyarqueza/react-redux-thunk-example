@@ -4,28 +4,28 @@ export const HELLO_RESPONSE = 'HELLO_RESPONSE';
 export function isLoading(isLoading = false) {
   return {
     type: IS_LOADING,
-    isLoading: isLoading
-  }
+    isLoading: isLoading,
+  };
 }
 
 function helloResponse(json) {
   return {
     type: HELLO_RESPONSE,
-    json: json
-  }
+    json: json,
+  };
 }
 
 export function fetchHello() {
-  return (dispatch) => {
+  return dispatch => {
     dispatch(isLoading(true));
     fetch('http://5afa7456edf5520014cbd352.mockapi.io/hello-world')
-      .then( (response) => {
+      .then(response => {
         return response;
       })
-      .then((response) => response.json())
-      .then( (json) => {
+      .then(response => response.json())
+      .then(json => {
         dispatch(isLoading(false));
         dispatch(helloResponse(json));
       });
-  }
+  };
 }

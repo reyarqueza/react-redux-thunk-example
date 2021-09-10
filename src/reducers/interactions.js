@@ -1,4 +1,4 @@
-import { IS_LOADING } from '../actions';
+import {IS_LOADING} from '../actions';
 
 export function isLoading(state = {}, action) {
   switch (action.type) {
