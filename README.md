@@ -30,6 +30,23 @@ Install dependencies (takes about 1 minute)
 npm install
 ```
 
+### Production
+
+Build the app:
+
+```
+npm run build
+```
+
+Wait for the build to finish, then start the local server:
+
+```
+npm start
+```
+
+The file /public/js/bundle.js will be overwritten and minfied in production mode (with source maps
+as a separate file). There will be no watch mode, and the build process will exit after completion.
+
 ### Development
 
 1. Start the local server:
@@ -49,14 +66,3 @@ npm run dev
 Add/edit React files in the src folder. After saving, your files are built automaticallty. The file
 /public/js/bundle.js will be created in development mode (including source maps). Refresh the
 browser window.
-
-### Production
-
-Build the app:
-
-```
-npm run build
-```
-
-The file /public/js/bundle.js will be overwritten and minfied in production mode (with source maps
-as a separate file). There will be no watch mode, and the build process will exit after completion.
